@@ -1,3 +1,16 @@
+function getNumber() {
+  var minNumber = 0; // The minimum number you want
+  var maxNumber = 100; // The maximum number you want
+  var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
+  document.getElementById("myNumber").innerHTML = randomnumber; // Sets content of <div> to number
+  return false; // Returns false just to tidy everything up
+}
+
+window.onload = getNumber; // Runs the function on click
+
+
+
+
 let changeColor = document.getElementById("changeColor");
 let randomText = document.getElementById("randomText");
 
